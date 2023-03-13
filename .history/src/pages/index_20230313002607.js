@@ -8,7 +8,7 @@ export default function Home({products}) {
       <Head>
         <title>Amazon 2.0</title>
         <meta name="google-site-verification" content="xijmqct2es-6lzE_-ti9zqcF4BNQsGgChEeNbt20ovQ" />
-        <meta name="google-site-verification" content="EnaxTToFahyBuxWqxsidVK7QxM8lePSlAE0Umy8j-kw" />
+        <meta name="google-site-verification" content="cOx82_cBxv9zjJ4oPhaBkpWFDHeG-I-zgXIiI_U_XTM" />
       </Head>
 
       <Header/>
