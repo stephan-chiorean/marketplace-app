@@ -15,7 +15,7 @@ export default function Home({products}) {
         <Banner/>
 
         {/* ProductFeed */}
-        <ProductFeed products={products}/>
+        <ProductFeed products/>
       </main>
     </div>
   );
@@ -23,7 +23,7 @@ export default function Home({products}) {
 
 export async function getServerSideProps(context) {
   const products = await fetch("https://fakestoreapi.com/products").then((res)=> {
-    return res.json()
+    res.json()
   });
   return {props: {
     products,
