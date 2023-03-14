@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/solid';
 import Currency from 'react-currency-formatter';
 import {removeFromBasket} from "../slices/basketSlice";
-import { useDispatch } from 'react-redux';
 
 function CheckoutProduct({
   id,
@@ -14,12 +13,7 @@ function CheckoutProduct({
   category,
   image,
 }) {
-    const dispatch = useDispatch();
     const [active,setActive] = useState(false);
-    
-    const removeItemFromBasket = () => {
-        dispatch(removeFromBasket({id}))
-    }
   return (
     <div className='grid grid-cols-5 bg-white p-2 rounded-md'>
       <Image src={image} height={200} width={200} objectFit='contain' />
@@ -41,7 +35,7 @@ function CheckoutProduct({
       <div className='flex flex-col space-y-4 md:space-y-5 my-auto'>
         <button className='button'>Buy Now</button>
         <button onClick={()=> setActive(true)}className={`${active ? `clicked` : `button`}`}>{active ? "Saved" : "Save for later"}</button>
-        <button onClick={removeItemFromBasket} className='button hover:bg-red-500'>Remove from basket</button>
+        <button className='button hover:bg-red-500'>Remove from basket</button>
       </div>
     </div>
   );
