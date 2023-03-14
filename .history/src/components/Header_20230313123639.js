@@ -6,9 +6,11 @@ import {
   ShoppingCartIcon,
 } from '@heroicons/react/outline';
 import {signIn, signOut, useSession} from "next-auth/react";
+import { data } from 'autoprefixer';
 
 function Header() {
-  const { data: session } = useSession()
+  const {data: session} = useSession();
+  
   return (
     <header>
       <div className='flex items-center bg-marketplace p-1 flex-grow py-2'>
@@ -31,8 +33,8 @@ function Header() {
         </div>
         {/* Right */}
         <div className='text-[#EEDAC2] flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
-          <div onClick={!session ? signIn : signOut} className='link'>
-            <p>{session ? `Hello ${session.user.name}`:`Sign In`}</p>
+          <div onClick={signIn} className='link'>
+            <p>{session ? `Hello, ${session.user.name}`: `Sign In`}</p>
             <p className='font-extrabold md:text-sm'>Account & Lists</p>
           </div>
           <div className='link'>

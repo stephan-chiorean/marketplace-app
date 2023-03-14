@@ -5,15 +5,20 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from '@heroicons/react/outline';
-import {signIn, signOut, useSession} from "next-auth/react";
+import { signIn, signOut, useSession } from 'next-auth/react';
+import { data } from 'autoprefixer';
+import { useRouter } from 'next/router';
 
 function Header() {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
+  const router = useRouter();
+
   return (
     <header>
       <div className='flex items-center bg-marketplace p-1 flex-grow py-2'>
         <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
           <Image
+            onClick={() => router.push('/')}
             src='/images/logo.png'
             width={150}
             height={40}
@@ -32,7 +37,7 @@ function Header() {
         {/* Right */}
         <div className='text-[#EEDAC2] flex items-center text-xs space-x-6 mx-6 whitespace-nowrap'>
           <div onClick={!session ? signIn : signOut} className='link'>
-            <p>{session ? `Hello ${session.user.name}`:`Sign In`}</p>
+            <p>{session ? `Hello, ${session.user.name}` : `Sign In`}</p>
             <p className='font-extrabold md:text-sm'>Account & Lists</p>
           </div>
           <div className='link'>
@@ -56,16 +61,15 @@ function Header() {
           <MenuIcon className='h-6 mr-1' />
           All
         </p>
-        <p className="link">Creator tools</p>
-        <p className="link">Popular Items</p>
-        <p className="link">Today's Deals</p>
-        <p className="link hidden lg:inline-flex">Electronics</p>
-        <p className="link hidden lg:inline-flex">Food & Grocery</p>
-        <p className="link hidden lg:inline-flex">Member</p>
-        <p className="link hidden lg:inline-flex">Buy Again</p>
-        <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
-        <p className="link hidden lg:inline-flex">Health & Personal Care</p>
-
+        <p className='link'>Creator tools</p>
+        <p className='link'>Popular Items</p>
+        <p className='link'>Today's Deals</p>
+        <p className='link hidden lg:inline-flex'>Electronics</p>
+        <p className='link hidden lg:inline-flex'>Food & Grocery</p>
+        <p className='link hidden lg:inline-flex'>Member</p>
+        <p className='link hidden lg:inline-flex'>Buy Again</p>
+        <p className='link hidden lg:inline-flex'>Shopper Toolkit</p>
+        <p className='link hidden lg:inline-flex'>Health & Personal Care</p>
       </div>
     </header>
   );
