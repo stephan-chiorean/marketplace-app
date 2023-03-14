@@ -20,13 +20,11 @@ function Checkout() {
     const stripe = await stripePromise;
     console.log("STRIPE PRINTS?", stripe)
 
-
     //call the backend to create a checkout session...
     const checkoutSession = await axios.post("/api/create-checkout-session", {
       items: items,
       email:session.user.email,
     })
-    console.log("CHECKOUT SESSION", checkoutSession)
 
     //redirect user to Stripe checkout
     const result = await stripe.redirectToCheckout({
