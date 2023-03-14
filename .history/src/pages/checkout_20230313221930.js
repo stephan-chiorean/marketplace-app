@@ -14,7 +14,7 @@ function Checkout() {
             {/* left */}
             <div className="flex-grow m-5 shadow-sm">
                 <Image
-                src="https://links.papareact.com/dyz"
+                src="http://links.papareact.com/ikj"
                 width={1020}
                 height={250}
                 objectFit={"contain"}
@@ -27,8 +27,8 @@ function Checkout() {
                       <CheckoutProduct 
                         key={index}
                         id={item.id}
-                        title={item.title}
-                        rating={item.rating}
+                        title={title.id}
+                        rating={rating.id}
                         price={item.price}
                         description={item.description}
                         cateogry={item.category}

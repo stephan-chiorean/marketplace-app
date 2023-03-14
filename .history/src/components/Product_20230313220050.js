@@ -10,14 +10,11 @@ const MIN_RATING = 1;
 function Product({ id, title, price, description, category, image }) {
   const dispatch = useDispatch();
   const [rating, setRating] = useState(0);
-  const [active, setActive] = useState(false);
   const addItemToBasket = () => {
-    setActive(true);
     const product = {
       id,
       title,
       price,
-      rating,
       description,
       category,
       image,
@@ -48,8 +45,8 @@ function Product({ id, title, price, description, category, image }) {
       <div className='mb-5'>
         <Currency quantity={price} />
       </div>
-      <button onClick={addItemToBasket} className={`mt-auto ${!active ? `button`: `clicked`}`}>
-        {active ? `Added` : `Add to Basket`}
+      <button onClick={addItemToBasket} className='mt-auto button bg-blue500'>
+        Add to Basket
       </button>
     </div>
   );

@@ -3,7 +3,6 @@ import Header from '@/components/Header';
 import Image from "next/image";
 import { useSelector } from 'react-redux';
 import { selectItems } from '@/slices/basketSlice';
-import CheckoutProduct from '@/components/CheckoutProduct';
 
 function Checkout() {
   const items = useSelector(selectItems);
@@ -14,7 +13,7 @@ function Checkout() {
             {/* left */}
             <div className="flex-grow m-5 shadow-sm">
                 <Image
-                src="https://links.papareact.com/dyz"
+                src="http://links.papareact.com/ikj"
                 width={1020}
                 height={250}
                 objectFit={"contain"}
@@ -23,18 +22,6 @@ function Checkout() {
                     <h1 className="text-3xl border-b border-marketplace pb-4">
                       {items.length===0 ? "Your Market Basket is empty" : "Your Shopping Basket"}
                     </h1>
-                    {items.map((item, index) => (
-                      <CheckoutProduct 
-                        key={index}
-                        id={item.id}
-                        title={item.title}
-                        rating={item.rating}
-                        price={item.price}
-                        description={item.description}
-                        cateogry={item.category}
-                        image={item.image}
-                      />
-                    ))}
                 </div>
             </div>
             {/* right */}

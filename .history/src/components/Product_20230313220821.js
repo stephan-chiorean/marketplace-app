@@ -17,7 +17,6 @@ function Product({ id, title, price, description, category, image }) {
       id,
       title,
       price,
-      rating,
       description,
       category,
       image,
@@ -49,7 +48,7 @@ function Product({ id, title, price, description, category, image }) {
         <Currency quantity={price} />
       </div>
       <button onClick={addItemToBasket} className={`mt-auto ${!active ? `button`: `clicked`}`}>
-        {active ? `Added` : `Add to Basket`}
+        Add to Basket
       </button>
     </div>
   );
