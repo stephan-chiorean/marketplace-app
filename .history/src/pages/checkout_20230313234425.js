@@ -24,7 +24,7 @@ function Checkout() {
                 objectFit={"contain"}
                 />
                 <div className="flex flex-col p-5 space-y-10 bg-white mt-3">
-                    <h1 className="text-3xl border-b border-marketplace pb-4 text-center">
+                    <h1 className="text-3xl border-b border-marketplace pb-4">
                       {items.length===0 ? "Your Market Basket is empty" : "Your Shopping Basket"}
                     </h1>
                     {items.map((item, index) => (
@@ -45,9 +45,9 @@ function Checkout() {
             <div className="flex flex-col bg-white p-10 shadow-md lg:mr-5 lg:my-5">
                 {items.length > 0 && (
                   <>
-                    <h2 className="whitespace-nowrap">Subtotal ({items.length} items):{' '}
+                    <h2 className="whitespace-nowrap">Subtotal ({items.length} items):
                     <span className="font-bold">
-                      <Currency quantity={total}/>
+                      {/* <Currency quantity={total}/> */}
                     </span>
 
                     </h2>

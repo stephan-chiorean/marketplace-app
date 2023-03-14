@@ -21,7 +21,7 @@ function CheckoutProduct({
         dispatch(removeFromBasket({id}))
     }
   return (
-    <div className='grid grid-cols-5 bg-white p-2 rounded-lg border-b-2 border-marketplace-light'>
+    <div className='grid grid-cols-5 bg-white p-2 rounded-md border-2 border-marketplace'>
       <Image src={image} height={200} width={200} objectFit='contain' />
 
       {/* middle */}
