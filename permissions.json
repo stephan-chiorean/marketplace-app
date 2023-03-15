@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "marketplace-eb319",
+  "private_key_id": "97c4628356f51da6194367fb40531a27b67a4cd7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwV1HioN0KIOEz\n2ZOPhb1BNUix12tBMX51Nev+3xFgNxqcYKHfzom2IcZlgiM0u469fzZTL2IYGwSg\n1xr6Zl/q9300OEgey77GHwGTI8/nZl8TTEi52jJzHsceb9KfFLkRRvW85S6FrfjO\n6G5j8OS7yQCf5Tpyo6NBjl9ZbOmrNaHKO0dlwq1hMl6CV1EjBZen5hYi43M3RoU0\n+5w+xx50/eAdwdASe8rXIfAny9IM92PIN1CJQ/xno8ftNC2810sda/X+MyZS1mcH\n2CNa7Ov2e2Rc36114K38dOeF+EcyBE9nYQk/Dk5QoiqPI16fgFQxqE5gAbb/kTGS\nwtF16pOZAgMBAAECggEARK7eD/1D2swPqxhVpxMaManFVK9o8Q2MCa8k6jKMHAOa\nc8oXgop5jNz+306e080xvZEs4Z2VAXqUhOkDcwAo3+XheFNrk8Mb3SL6hArw0VpI\nMcYGlYztFXWpbKt1R8zUgGw5DofdZOfr/vr89CRBkvqpKZ4o87nUvpXrgXMwWCR3\n85orO/cKm1NQop6RjiWcJYA6YMHmwG6XZnz6tI2dpm4jyosc8hn+0JLL3u66ep2C\nrlx+ey9zzQjlkiYQFTsfAeRcsitaq9hR7fjpcOuZTf5H1malKorAHsujcFv4Wb5Q\n5emib5sJb8H1TQEXymvQSmAdUc9GXEwHKwOUBEgV+QKBgQDbmUgF0VR13Ltygm7q\n6S5+jeu64PxRs0vU8jlNwEvbrj4OibQuGoHdN/yTr7TcFkkLUQYUWbhpYS4zJTuO\noXii2KKuu8TnFIif84EpI6fUk3J9ng/SSiUcnwNVIYYuDkhTPUmJ89romMRjj7oJ\n3cKTLZu+7H3uJRHuQKrTdEoLlwKBgQDNkmQDhOIBf2QB8ZgqZ+bXMyrB8cS3Yqtm\nqD+jEC3vb1vY8+vcNHEQPGypse5PJeCodUZoarJljIUUdbJvsmoRYeWN4NkbhzRi\n8nQRPoAZhGATNQI/Ae7E6yfbPjN4Vm8oEa0GpxJU0knrWmkaO4RmrDstm/IaDXDE\nM+tFy5cATwKBgQDVaqaAYOxAj4DszK6XRn+VJsBOIpGVpTaxgacHVTdkDHbrEhE2\nLTTAlcS2kzCmJFJg2SGbbYa3g2au9iRnfa4MNZYFUx8NpPsS2EhSfwCAq7u9MXwW\n11Ax/Kf0eFw7Lk5D93Aczg2Vt8JFME2RgR+0gcK3Tockhopijh522rGLiQKBgHiZ\n2XL3EmAujE1Xnx3BtvupWPxPCklL6aJgMnVHmKtPeWLeNxEI8wvDZzxm1pg4cIRj\nyNqZPe+1cJ2ALx64XOG1vSZvMu+jcmhaNR2ovR47OuIJxzePurRsAQXuh+OhUbUA\nKbItceOxOwyIDgEFybcyc8VeJ7qBCBcTHoPj3MKhAoGAaFW9KM0Q4Ztordwj8iGI\nULTS0FxhaBT2TCyx5Z6+wl7tYvV5ApBaDXOyHTgAbLS+CbZ2W8Q6rqQJaOkk5tiG\ns7lN5KplyMJLB7LrQGw1zEiCvqofvPosxGyBTlNvk68z5fVuMnH5jO5FmvBRkY21\nvugVUVvlzBaWxLlb+r8+Ztc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fpuk8@marketplace-eb319.iam.gserviceaccount.com",
+  "client_id": "116593716451037580719",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fpuk8%40marketplace-eb319.iam.gserviceaccount.com"
+}
